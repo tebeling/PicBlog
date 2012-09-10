@@ -10,13 +10,6 @@
 # Ignore the default SQLite database.
 /db/*.sqlite3
 
-
-doc/app
-doc/api
-
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-doc/app
-doc/api
-.DS_Store
