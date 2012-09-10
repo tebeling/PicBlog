@@ -1,0 +1,18 @@
+<% provide(:title, 'Home') %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PicBlog | Its a Wargamers PicLog | <%= yield(:title) %> </title>
+  </head>
+  <body>
+    <h1>PicLog</h1>
+    <p>
+    Greetings Wargamer
+    This is the Home Page for PicBlog
+    
+  
+    
+    
+    </p>
+  </body>
+</html>
