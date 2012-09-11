@@ -9,6 +9,10 @@ gem "bootstrap-sass", "~> 2.1.0.0"
 
 gem 'sqlite3', :group => [:development, :test]
 
+gem 'jquery-rails'
+gem 'annotate'
+gem 'bcrypt-ruby'
+
 group :production do
   gem 'thin'
   gem 'pg'
@@ -20,17 +24,18 @@ end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.2'
+  gem 'uglifier', '>= 1.0.3'
+end
+
+  group :test do
+  
+    gem 'factory_girl_rails', '1.4.0'
+  end
+
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
-end
-
-gem 'jquery-rails'
-
-gem 'annotate'
-gem 'bcrypt-ruby'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
