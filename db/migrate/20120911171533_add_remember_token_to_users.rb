@@ -1,4 +1,4 @@
-class AddRememberTokenToUsers < ActiveRecord::Migration
+lass AddRememberTokenToUsers < ActiveRecord::Migration
 
   def change
     add_column :users, :remember_token, :string
