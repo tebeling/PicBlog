@@ -8,6 +8,7 @@ gem "bootstrap-sass", "~> 2.1.0.0"
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3', :group => [:development, :test]
+
 group :production do
   gem 'thin'
   gem 'pg'
@@ -27,6 +28,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'annotate'
+gem 'bcrypt-ruby'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
