@@ -12,7 +12,8 @@ class StaticPagesController < ApplicationController
   def contact
   end
   
-  
+  def news
+  end
   
   
   

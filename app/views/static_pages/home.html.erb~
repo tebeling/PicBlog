@@ -1,18 +1,11 @@
-<% provide(:title, 'Home') %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>PicBlog | Its a Wargamers PicLog | <%= yield(:title) %> </title>
-  </head>
-  <body>
-    <h1>PicLog</h1>
-    <p>
-    Greetings Wargamer
-    This is the Home Page for PicBlog
-    
-  
-    
-    
-    </p>
-  </body>
-</html>
+<div class="center hero-unit">
+  <h1>Welcome to PicBlog</h1>
+
+  <h2>
+    Its a Wargamers PicLog
+  </h2>
+
+  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("logo.png", alt: "Rails"), 'http://rubyonrails.org/' %>

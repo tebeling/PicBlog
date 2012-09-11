@@ -1,6 +1,11 @@
-<% provide(:title, 'Home') %>
-<h1>PicBlog - Its a wargamers PicLog</h1>
-<p>
-  Greetings Wargamers
-  This is the home page for PicLog
-</p>
+<div class="center hero-unit">
+  <h1>Welcome to PicBlog</h1>
+
+  <h2>
+    Its a Wargamers PicLog
+  </h2>
+
+  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("logo.png", alt: "Rails"), 'http://rubyonrails.org/' %>
