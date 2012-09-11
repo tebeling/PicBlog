@@ -12,12 +12,16 @@ gem 'sqlite3', :group => [:development, :test]
 gem 'jquery-rails'
 gem 'annotate'
 gem 'bcrypt-ruby'
+gem 'faker', '1.0.1'
+
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 group :production do
   gem 'thin'
-  gem 'pg'
 end
 
+	gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
