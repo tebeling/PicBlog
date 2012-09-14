@@ -8,8 +8,13 @@ namespace :db do
 end
 
 def make_users
+<<<<<<< HEAD
   admin = User.create!(name:     "Example User",
                        email:    "example@railstutorial.org",
+=======
+  admin = User.create!(name:     "T",
+                       email:    "ttt@ttt.de",
+>>>>>>> following-users
                        password: "foobar",
                        password_confirmation: "foobar")
   admin.toggle!(:admin)
@@ -40,3 +45,7 @@ def make_relationships
   followed_users.each { |followed| user.follow!(followed) }
   followers.each      { |follower| follower.follow!(user) }
 end
+<<<<<<< HEAD
+
+=======
+>>>>>>> following-users

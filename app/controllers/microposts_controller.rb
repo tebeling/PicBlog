@@ -1,9 +1,5 @@
 class MicropostsController < ApplicationController
-<<<<<<< HEAD
-  before_filter :signed_in_user, only: [:create, :destroy]
-=======
   before_filter :signed_in_user
->>>>>>> following-users
   before_filter :correct_user, only: :destroy
 
   def create
@@ -12,15 +8,11 @@ class MicropostsController < ApplicationController
       flash[:success] = "Micropost created!"
       redirect_to root_path
     else
+      @feed_items = []
       render 'static_pages/home'
     end
   end
 
-
-  def index
-  end
-  
-  
   def destroy
     @micropost.destroy
     redirect_to root_path
@@ -33,6 +25,3 @@ class MicropostsController < ApplicationController
       redirect_to root_path if @micropost.nil?
     end
 end
-
-
-
