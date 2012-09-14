@@ -9,7 +9,7 @@
 #  updated_at :datetime         not null
 #
 
-cclass Micropost < ActiveRecord::Base
+class Micropost < ActiveRecord::Base
   attr_accessible :content
   belongs_to :user
 
@@ -19,7 +19,6 @@ cclass Micropost < ActiveRecord::Base
   
   default_scope order: 'microposts.created_at DESC'
   
-end
 =======
 
   default_scope order: 'microposts.created_at DESC'
@@ -30,5 +29,5 @@ WHERE follower_id = :user_id"
     where("user_id IN (#{followed_user_ids}) OR user_id = :user_id",
           user_id: user.id)
   end
-
 >>>>>>> following-users
+end

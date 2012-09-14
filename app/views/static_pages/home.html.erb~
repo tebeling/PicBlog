@@ -11,17 +11,22 @@
         <%= render 'shared/micropost_form' %>
       </section>
     </aside>
-<<<<<<< HEAD
-  </div>  
 
-=======
-    <div class="span8">
+
+
+
+	<div class="span8">
       <h3>Micropost Feed</h3>
       <%= render 'shared/feed' %>
     </div>
+
+    </div>    
+<% else %>
+   
+
   </div>
 <% else %>
->>>>>>> following-users
+
   <div class="center hero-unit">
   
     <h1>Welcome to PicBlog !</h1>
@@ -74,16 +79,14 @@ interval: 1000
 
 
 </div>
-<<<<<<< HEAD
-</div>
-=======
 
->>>>>>> following-users
+</div>
+
 
 
 <!-- Link for Picture -->
 
 <div style="text-align: center;"><%= link_to image_tag("logo.png"), 'http://tebeling.heroku.com' %>
 </div>
-
+<% end %>
 

@@ -8,16 +8,16 @@
         <%= @user.name %>
       </h1>
     </section>
-<<<<<<< HEAD
+
     
   
  </aside>
-=======
+
     <section>
       <%= render 'shared/stats' %>
     </section>
   </aside>
->>>>>>> following-users
+
   <div class="span8">
     <%= render 'follow_form' if signed_in? %>
     <% if @user.microposts.any? %>
