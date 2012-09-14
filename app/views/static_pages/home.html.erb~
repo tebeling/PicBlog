@@ -1,5 +1,3 @@
-
-
 <% if signed_in? %>
   <div class="row">
     <aside class="span4">
@@ -10,16 +8,8 @@
         <%= render 'shared/micropost_form' %>
       </section>
     </aside>
-    <div class="span8">
-      <h3>Micropost Feed</h3>
-      <%= render 'shared/feed' %>
-    </div>
-  </div>
-  
-  
-  
-  
-<% else %>
+  </div>  
+
   <div class="center hero-unit">
     <h1>Welcome to PicBlog !</h1>
 
@@ -27,7 +17,7 @@
       Its a Wargamers PicLog
       
     </h2>
-    <%= link_to "Sign up now!", signup_path, 
+    <%= link_to "Sign up now!", signup_path,
                                 class: "btn btn-large btn-primary" %>
   </div>
 
@@ -38,7 +28,9 @@
 <script>
 $('.carousel').carousel({
 interval: 1000
-})​
+})​/div>
+</div>
+</div>
 </script>
 
 
@@ -61,7 +53,7 @@ interval: 1000
 <div class="item"><%= link_to image_tag("0.png") %></div>
 <div class="item"><%= link_to image_tag("0.png") %></div>
 
-</div> 
+</div>
 
 
 <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -70,13 +62,11 @@ interval: 1000
 
 </div>
 </div>
-</div>
 
 
 <!-- Link for Picture -->
 
 <div style="text-align: center;"><%= link_to image_tag("logo.png"), 'http://tebeling.heroku.com' %>
 </div>
-<% end %>
 
 
