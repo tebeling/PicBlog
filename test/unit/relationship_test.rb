@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # == Schema Information
 #
 # Table name: relationships
@@ -9,6 +10,8 @@
 #  updated_at  :datetime         not null
 #
 
+=======
+>>>>>>> following-users
 require 'test_helper'
 
 class RelationshipTest < ActiveSupport::TestCase

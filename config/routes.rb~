@@ -1,14 +1,22 @@
 PicBlog::Application.routes.draw do
+<<<<<<< HEAD
 
+=======
+>>>>>>> following-users
   resources :users do
     member do
       get :following, :followers
     end
   end
   
+<<<<<<< HEAD
     resources :sessions,      only: [:new, :create, :destroy]
   resources :microposts,    only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
+=======
+  resources :sessions, only:[:new, :create, :destroy]
+  resources :microposts, only: [:create, :destroy]
+>>>>>>> following-users
   
   root to: 'static_pages#home'
   

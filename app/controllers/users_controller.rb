@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
+<<<<<<< HEAD
 
 before_filter :signed_in_user,
+=======
+  before_filter :signed_in_user,
+>>>>>>> following-users
                 only: [:index, :edit, :update, :destroy, :following, :followers]
   before_filter :correct_user, only: [:edit, :update]
   before_filter :admin_user, only: :destroy
