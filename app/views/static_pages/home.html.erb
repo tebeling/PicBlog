@@ -1,29 +1,37 @@
-<script src="twitter-bootstrap-v2/docs/assets/js/bootstrap.js"></script>
-<script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-transition.js"></script>
-<script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-carousel.js"></script>
-
-<script src="js/jquery.js"></script>
 
 
+<% if signed_in? %>
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+      <section>
+        <%= render 'shared/micropost_form' %>
+      </section>
+    </aside>
+    <div class="span8">
+      <h3>Micropost Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>
+  
+<% else %>
 
 
-<div class="center hero-unit">
-  <h1>Welcome to PicBlog</h1>
+  <div class="center hero-unit">
+    <h1>Welcome to PicBlog !</h1>
 
-  <h2>
-    Its a Wargamers PicLog
-  </h2>
+    <h2>
+      Its a Wargamers PicLog
+      
+    </h2>
+    <%= link_to "Sign up now!", signup_path, 
+                                class: "btn btn-large btn-primary" %>
+  </div>
 
     <!-- Carousel begin-->
-
-<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-
-</div>
-
-
-
-    <!-- Carousel begin-->
- <div class="hero-unit">
+<div class="hero-unit">
 <div id="myCarousel" class="carousel slide offset2">
 
 <script>
@@ -68,3 +76,6 @@ interval: 1000
 
 <div style="text-align: center;"><%= link_to image_tag("logo.png"), 'http://tebeling.heroku.com' %>
 </div>
+<% end %>
+
+
