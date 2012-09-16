@@ -19,6 +19,7 @@ PicBlog::Application.routes.draw do
   match '/about', to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
   match '/news',	to: 'static_pages#news'
-
+  match '/manufactorum', to: 'static_pages#manufactorum'
+  match '/gallery',	to: 'static_pages#gallery'
 
 end

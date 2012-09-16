@@ -14,4 +14,10 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+  
+  def manufactorum
+  end
+  
+  def gallery
+  end
 end
