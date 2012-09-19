@@ -1,0 +1,37 @@
+<div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
+    
+	<a rel="gallery" href="/gallery/0.JPG" title="Pic Title">
+	<img src="/gallery/0_s.JPG">
+	</a>
+		<a rel="gallery" href="/gallery/1.JPG" title="Pic Title">
+		<img src="/gallery/1_s.JPG">
+	</a>
+	<a rel="gallery" href="/gallery/2.JPG" title="Pic Title">
+		<img src="/gallery/2_s.JPG">
+	</a>
+	<a rel="gallery" href="/gallery/3.JPG" title="Pic Title">
+		<img src="/gallery/3_s.JPG">
+	</a>
+	<a rel="gallery" href="/gallery/4.JPG" title="Pic Title">
+		<img src="/gallery/4_s.JPG">
+	</a>
+	<a rel="gallery" href="/gallery/5.JPG" title="Pic Title">
+		<img src="/gallery/5_s.JPG">
+	</a>	
+	<a rel="gallery" href="/gallery/6.JPG" title="Pic Title">
+		<img src="/gallery/6_s.JPG">
+	</a>	
+	<a rel="gallery" href="/gallery/0.JPG" title="Pic Title">
+		<img src="/gallery/0_s.JPG">
+	</a>	
+	<a rel="gallery" href="/gallery/7.JPG" title="Pic Title">
+		<img src="/gallery/7_s.JPG">
+	</a>	
+	<a rel="gallery" href="/gallery/8.JPG" title="Pic Title">
+		<img src="/gallery/8_s.JPG">
+	</a>	
+	<a rel="gallery" href="/gallery/9.JPG" title="Pic Title">
+		<img src="/gallery/9_s.JPG">
+	</a>	
+	
+</div>
